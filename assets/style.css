@@ -78,12 +78,21 @@
 /*#endregion utility*/
 
 /*#region common*/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .col-lg-2 {
-    width: 300px;
+    width: 230px;
 }
 
 .col-lg-10 {
-    width: calc(100% - 300px);
+    width: calc(100% - 230px);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /*#endregion common*/
@@ -106,6 +115,16 @@
     background-color: var(--sidebar);
     flex-direction: column;
     justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    width: 130px;
+}
+
+.logo img {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .wrapper {
@@ -115,9 +134,9 @@
 
 .top_wrapper {
     background-color: var(--top-wrapper);
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
+    left: 230px;
     z-index: 3;
     width: 100%;
 }
@@ -133,4 +152,22 @@
 
 .row {
     padding: 1rem;
+}
+
+.card {
+    max-width: 230px;
+    padding: 1rem;
+}
+
+.s_row_sidebar {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.s_row_sidebar a {
+    text-decoration: none;
+    color: var(--light-off);
+    font-size: 13px;
+    font-weight: bold;
 }
