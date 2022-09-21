@@ -1,3 +1,4 @@
+/*#region assets*/
 * {
     padding: 0;
     margin: 0;
@@ -12,6 +13,36 @@
     --light-off: #A3A3A3;
     --evidence: #ADFF2F;
     --light-on: #FFFFFF;
+}
 
+/*#endregion assets*/
+
+/*#region debug*/
+.debug .main_container {
+    background-color: #000000;
+}
+
+.debug .main {
+    background-color: red;
+}
+
+/*#endregion debug*/
+
+/*#region common*/
+.main_container {
+    height: 100vh;
+}
+
+.main {
+    height: calc(100vh - 100px);
+}
+
+.player {
+    height: 100px;
+    background-color: var(--player);
 
 }
+
+
+
+/*#endregion common*/
