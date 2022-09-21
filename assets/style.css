@@ -141,6 +141,17 @@ img {
     justify-content: end;
 }
 
+.btn {
+    color: var(--light-on);
+    border: 1px solid var(--light-on);
+    border-radius: 2rem;
+    margin: 20px;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
 .music_section {
     width: 100%;
     margin-top: 90px;
@@ -163,26 +174,35 @@ img {
     height: 2rem;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
-.s_row_sidebar a {
-    text-decoration: none;
+.s_row_sidebar span {
     color: var(--light-off);
-    font-size: 13px;
-    font-weight: bold;
 }
 
 .s_row_sidebar img {
     filter: invert(40%);
 }
 
-.btn {
+.side_playlist {
+    margin-top: 30px;
+    color: var(--light-off);
+}
+
+.playlist {
     color: var(--light-on);
-    border: 1px solid var(--light-on);
-    border-radius: 2rem;
-    margin: 20px;
-    padding: 1rem 2.5rem;
-    text-decoration: none;
-    font-size: 12px;
+    letter-spacing: -0.03em;
+    margin-bottom: 1rem;
+}
+
+.playlist,
+.s_row_sidebar a {
     font-weight: bold;
+    font-size: 14px;
+}
+
+.side_playlist i {
+    color: var(--light-off);
+    margin-right: 10px;
 }
