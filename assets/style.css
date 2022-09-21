@@ -3,3 +3,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --sidebar: #000000;
+    --player: #282828;
+    --top-wrapper: #080B12;
+    --wrapper: #141922;
+    --light-off: #A3A3A3;
+    --evidence: #ADFF2F;
+    --light-on: #FFFFFF;
+
+
+}
