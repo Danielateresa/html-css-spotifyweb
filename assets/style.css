@@ -428,6 +428,10 @@ i.fa-regular.fa-folder,
     justify-content: center;
 }
 
+.up_row_player a {
+    color: var(--light-on);
+}
+
 .up_row_player i:not(i.fa-solid.fa-rotate-right) {
     padding-right: 2rem;
 
@@ -446,6 +450,7 @@ i.fa-regular.fa-folder,
     background-color: var(--light-off);
     border-radius: 5px;
     margin: 0 1rem;
+    position: relative;
 }
 
 .music_progress div {
@@ -460,6 +465,7 @@ i.fa-regular.fa-folder,
     height: 3px;
     background-color: var(--light-off);
     border-radius: 5px;
+    position: relative;
 }
 
 .music_progress_sm div {
@@ -499,6 +505,41 @@ i.fa-regular.fa-folder,
 .hover:hover .app_installer i {
     filter: saturate(100%);
     color: var(--light-on);
+}
+
+.music_progress a:hover:after {
+    content: "\2022";
+    position: absolute;
+    top: -30px;
+    left: 70px;
+    font-weight: 900;
+    font-size: 44px;
+    color: var(--light-on);
+    display: block;
+}
+
+.music_progress div:hover {
+    background-color: var(--evidence);
+}
+
+.music_progress_sm a:hover:after {
+    content: "\2022";
+    position: absolute;
+    top: -30px;
+    left: 15px;
+    font-weight: 900;
+    font-size: 44px;
+    color: var(--light-on);
+    display: block;
+}
+
+.music_progress_sm div:hover {
+    background-color: var(--evidence);
+}
+
+.up_row_player a:hover {
+    transform: scale(115%) translate(2px);
+
 }
 
 /*#endregion hover*/
