@@ -480,6 +480,23 @@ i.fa-regular.fa-folder,
     padding-right: 0.5rem;
 }
 
+/*#region hover*/
+.btn:hover {
+    transform: scale(110%);
+}
+
+.music_nav_section a:hover,
+.s_row_sidebar a :hover {
+    color: var(--light-on);
+}
+
+.hover:hover .s_row_sidebar img {
+    filter: saturate(100%);
+    color: var(--light-on);
+}
+
+/*#endregion hover*/
+
 /**************RESPONSIVE**************/
 
 /*#region media query 878px*/
