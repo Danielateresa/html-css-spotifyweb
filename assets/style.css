@@ -407,32 +407,38 @@ i.fa-regular.fa-folder,
 }
 
 .center {
-    width: 40%;
     justify-content: space-between;
     flex-grow: 2;
 }
 
 .left,
 .right {
-    flex-grow: 1;
+    width: 180px;
+    flex-grow: 2;
 }
 
 .up_row_player {
-    width: 250px;
-    justify-content: space-between;
+    width: 190px;
     align-items: center;
     margin: 0 auto;
+    justify-content: center;
+}
+
+.up_row_player i:not(i.fa-solid.fa-rotate-right) {
+    padding-right: 2rem;
+
 }
 
 .bottom_row_player {
     align-items: center;
     justify-content: center;
     padding-top: 0.8rem;
+    margin: 0 auto;
 }
 
 .music_progress {
     width: 430px;
-    height: 4px;
+    height: 3px;
     background-color: var(--light-off);
     border-radius: 5px;
     margin: 0 2rem;
@@ -440,38 +446,52 @@ i.fa-regular.fa-folder,
 
 .music_progress div {
     width: 80px;
-    height: 4px;
+    height: 3px;
     background-color: var(--light-on);
     border-radius: 5px;
 }
 
 .music_progress_sm {
     width: 115px;
-    height: 4px;
+    height: 3px;
     background-color: var(--light-off);
     border-radius: 5px;
 }
 
 .music_progress_sm div {
     width: 20px;
-    height: 4px;
+    height: 3px;
     background-color: var(--light-on);
     border-radius: 5px;
 }
 
 .right {
     align-items: center;
+    justify-content: end;
+    width: 180px;
+    flex-grow: 2;
 }
 
 .right i {
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 }
 
 /**************RESPONSIVE**************/
 
 /*#region media query 878px*/
-.col_lg_4 {
-    width: calc(100% / 12 * 4);
+@media screen and (max-width:878px) {
+    .col_md_3 {
+        width: calc(100% / 12 * 3);
+    }
+
+    .row.d_flex {
+        flex-wrap: wrap;
+    }
 }
 
 /*#endregion media query 878px*/
+
+/*#region media query 639px*/
+@media screen and (max-width:639px) {}
+
+/*#endregion media query 639px*/
