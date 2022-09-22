@@ -144,6 +144,7 @@ img {
 .logo img {
     width: 100%;
     margin-bottom: 20px;
+    margin-left: 1rem;
 }
 
 .wrapper {
@@ -188,8 +189,7 @@ img {
 }
 
 .title_content h2 {
-    padding: 0 0 1rem 0.5rem;
-
+    padding: 1rem 0 1rem 0.5rem;
 }
 
 .card {
@@ -293,7 +293,9 @@ span.lighted_text {
 
 .bottom_sidebar .d_flex {
     align-items: center;
+    padding-bottom: 0.5rem;
 }
+
 
 .music_nav_section {
     text-align: center;
@@ -342,10 +344,19 @@ span.lighted_text {
     text-align: center;
 }
 
+.card_detail {
+    padding-top: 0.5rem;
+}
+
 .card:hover .overlay {
     z-index: 0;
 }
 
 .card h3 {
     margin: 0.5rem 0;
+}
+
+.subtitle {
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
 }
