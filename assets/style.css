@@ -399,7 +399,7 @@ i.fa-regular.fa-folder,
 }
 
 .player_album_detail {
-    padding: 0 3rem 0 0.5rem;
+    padding: 0 2rem 0 0.5rem;
 }
 
 .left_symbols i:first-child {
@@ -437,11 +437,11 @@ i.fa-regular.fa-folder,
 }
 
 .music_progress {
-    width: 430px;
+    width: 400px;
     height: 3px;
     background-color: var(--light-off);
     border-radius: 5px;
-    margin: 0 2rem;
+    margin: 0 1rem;
 }
 
 .music_progress div {
@@ -487,11 +487,57 @@ i.fa-regular.fa-folder,
     .row.d_flex {
         flex-wrap: wrap;
     }
+
+    .music_progress {
+        width: 240px;
+    }
+
+    .music_progress_sm {
+        width: 80px;
+    }
 }
 
 /*#endregion media query 878px*/
 
 /*#region media query 639px*/
-@media screen and (max-width:639px) {}
+@media screen and (max-width:639px) {
+    .col_s_6 {
+        width: calc(100% / 12 * 6);
+    }
+
+    .music_progress {
+        width: 130px;
+    }
+
+    .music_progress_sm {
+        width: 80px;
+    }
+
+    .right {
+        flex-grow: 3;
+    }
+}
+
+/*#endregion media query 639px*/
+
+/*#region media query 639px*/
+@media screen and (max-width:552px) {
+    .col_s_6 {
+        width: calc(100% / 12 * 6);
+    }
+
+    .music_progress {
+        width: 120px;
+    }
+
+    .music_progress_sm {
+        width: 80px;
+    }
+
+    .right {
+        flex-grow: 3;
+    }
+
+}
 
 /*#endregion media query 639px*/
