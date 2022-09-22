@@ -63,6 +63,13 @@
     height: 300px;
 }
 
+.debug .left,
+.debug .center,
+.debug .right {
+    background-color: red;
+    width: 200px;
+}
+
 /*#endregion debug*/
 
 
@@ -91,6 +98,10 @@ h5 {
 
 .rounded {
     border-radius: 50%;
+}
+
+.lighted_text {
+    color: var(--light-on);
 }
 
 /*#endregion utility*/
@@ -126,6 +137,9 @@ img {
 .player {
     height: 80px;
     background-color: var(--player);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
 }
 
 .sidebar {
@@ -367,4 +381,27 @@ span.lighted_text {
 .subtitle {
     padding-left: 0.5rem;
     padding-bottom: 0.5rem;
+}
+
+.left,
+.left_album {
+    align-items: center;
+}
+
+.left img {
+    max-width: 40px;
+}
+
+i.fa-regular.fa-heart,
+i.fa-regular.fa-folder,
+.left_album h6 {
+    color: var(--light-off);
+}
+
+.player_album_detail {
+    padding: 0 3rem 0 0.5rem;
+}
+
+.left_symbols i:first-child {
+    padding-right: 0.5rem;
 }
