@@ -139,7 +139,7 @@ img {
     background-color: var(--player);
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
 }
 
 .sidebar {
@@ -404,4 +404,58 @@ i.fa-regular.fa-folder,
 
 .left_symbols i:first-child {
     padding-right: 0.5rem;
+}
+
+.center {
+    width: 530px;
+    justify-content: space-between;
+}
+
+.up_row_player {
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.bottom_row_player {
+    align-items: center;
+    padding-top: 0.8rem;
+}
+
+.music_progress {
+    width: 430px;
+    height: 4px;
+    background-color: var(--light-off);
+    border-radius: 5px;
+    margin: 0 2rem;
+}
+
+.music_progress div {
+    width: 80px;
+    height: 4px;
+    background-color: var(--light-on);
+    border-radius: 5px;
+}
+
+.music_progress_sm {
+    width: 115px;
+    height: 4px;
+    background-color: var(--light-off);
+    border-radius: 5px;
+}
+
+.music_progress_sm div {
+    width: 20px;
+    height: 4px;
+    background-color: var(--light-on);
+    border-radius: 5px;
+}
+
+.right {
+    align-items: center;
+}
+
+.right i {
+    padding-right: 1rem;
 }
