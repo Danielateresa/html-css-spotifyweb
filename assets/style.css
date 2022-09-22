@@ -466,3 +466,12 @@ i.fa-regular.fa-folder,
 .right i {
     padding-right: 1rem;
 }
+
+/**************RESPONSIVE**************/
+
+/*#region media query 878px*/
+.col_lg_4 {
+    width: calc(100% / 12 * 4);
+}
+
+/*#endregion media query 878px*/
