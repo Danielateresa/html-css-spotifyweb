@@ -486,11 +486,17 @@ i.fa-regular.fa-folder,
 }
 
 .music_nav_section a:hover,
-.s_row_sidebar a :hover {
+.s_row_sidebar a :hover,
+.player_album_detail :hover,
+.left_symbols a :hover {
     color: var(--light-on);
 }
 
-.hover:hover .s_row_sidebar img {
+.hover:hover .s_row_sidebar img,
+.hover:hover .s_row_sidebar span,
+.hover:hover .s_row_sidebar i,
+.hover:hover .app_installer span,
+.hover:hover .app_installer i {
     filter: saturate(100%);
     color: var(--light-on);
 }
