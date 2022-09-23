@@ -581,7 +581,8 @@ i.fa-regular.fa-folder,
         flex-grow: 3;
     }
 
-    .hide_album_m {
+    .hide_album_m,
+    .hide_album_s {
         display: none;
     }
 }
