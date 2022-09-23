@@ -667,9 +667,17 @@ i.fa-regular.fa-folder,
 
 /*#endregion media query 552px*/
 
+
+/*#region media query height 650px*/
 @media screen and (max-height:650px) {
     .playlist_scroll {
         max-height: 180px;
         overflow-y: auto;
     }
+
+    .top_wrapper {
+        display: none;
+    }
 }
+
+/*#endregion media query height 650px*/
