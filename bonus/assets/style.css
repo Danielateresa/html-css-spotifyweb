@@ -589,15 +589,17 @@ i.fa-regular.fa-folder,
 
 .playlist,
 .playlist_name,
-.rotate {
+.rotate,
+.move {
     position: relative;
 }
 
-.playlist:hover,
+.move:hover,
 .playlist_name:hover {
     animation-name: to_right;
     animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    transition: ease-in-out;
+    animation-fill-mode: both;
 }
 
 @keyframes to_right {
