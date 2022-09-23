@@ -506,12 +506,8 @@ i.fa-regular.fa-folder,
     color: var(--light-on);
 }
 
-.music_progress a:hover:after {
-    left: 70px;
-}
-
-.music_progress a:hover:after,
-.music_progress_sm a:hover:after {
+.progress:hover:after,
+.music_progress_sm div:hover:after {
     content: "\2022";
     position: absolute;
     top: -30px;
@@ -521,8 +517,12 @@ i.fa-regular.fa-folder,
     display: block;
 }
 
-.music_progress_sm a:hover:after {
+.music_progress_sm div:hover:after {
     left: 15px;
+}
+
+.progress:hover:after {
+    left: 70px;
 }
 
 .music_progress div:hover,
@@ -694,10 +694,17 @@ i.fa-regular.fa-folder,
         display: none;
     }
 
+    .right {
+        position: relative;
+    }
+
+    .music_progress_sm div:hover:after {
+        left: -7px;
+        top: -10px;
+    }
 }
 
 /*#endregion media query 552px*/
-
 
 /*#region media query height 650px*/
 @media screen and (max-height:650px) {
@@ -713,7 +720,6 @@ i.fa-regular.fa-folder,
     .music_nav_section {
         margin-top: 1rem;
     }
-
 }
 
 /*#endregion media query height 650px*/
