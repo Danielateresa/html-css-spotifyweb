@@ -555,6 +555,10 @@ i.fa-regular.fa-folder,
     .music_progress_sm {
         width: 80px;
     }
+
+    .hide_album_m {
+        display: none;
+    }
 }
 
 /*#endregion media query 878px*/
@@ -575,6 +579,10 @@ i.fa-regular.fa-folder,
 
     .right {
         flex-grow: 3;
+    }
+
+    .hide_album_m {
+        display: none;
     }
 }
 
