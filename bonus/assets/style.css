@@ -644,7 +644,9 @@ i.fa-regular.fa-folder,
     .side_playlist,
     .d_flex span,
     hr,
-    .logo img {
+    .logo img,
+    .hide_album_m,
+    .hide_album_s {
         display: none;
     }
 
@@ -663,6 +665,7 @@ i.fa-regular.fa-folder,
     .player_album_detail {
         padding: 0 1rem 0 0.5rem;
     }
+
 }
 
 /*#endregion media query 552px*/
@@ -678,6 +681,11 @@ i.fa-regular.fa-folder,
     .top_wrapper {
         display: none;
     }
+
+    .music_nav_section {
+        margin-top: 1rem;
+    }
+
 }
 
 /*#endregion media query height 650px*/
