@@ -669,10 +669,29 @@ i.fa-regular.fa-folder,
 
     .left img {
         width: 30px;
+        margin-right: 1rem;
     }
 
-    .player_album_detail {
-        padding: 0 1rem 0 0.5rem;
+    .up_row_player i:not(i.fa-solid.fa-rotate-right) {
+        padding-right: 1rem;
+    }
+
+    .music_progress_sm {
+        width: 3px;
+        height: 50px;
+    }
+
+    .music_progress_sm div {
+        width: 3px;
+        height: 30px;
+        margin-top: 20px;
+    }
+
+    .player_album_detail,
+    .left_symbols,
+    .right i:first-child,
+    .right i:nth-child(2) {
+        display: none;
     }
 
 }
