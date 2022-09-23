@@ -130,6 +130,58 @@ img {
     max-height: 100%;
 }
 
+.btn,
+.up_row_player a {
+    transition: 0.5s;
+}
+
+/*#region animations*/
+
+.playlist,
+.playlist_name,
+.rotate {
+    position: relative;
+}
+
+.playlist:hover,
+.playlist_name:hover {
+    animation-name: to_right;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes to_right {
+    from {
+        color: var(--light-on);
+        top: 0;
+        left: 0px;
+    }
+
+    to {
+        color: var(--evidence);
+        top: 0;
+        left: 50px;
+    }
+}
+
+.square:hover i.rotating_plus {
+    animation-name: rotation;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+/*#endregion animations*/
+
 /*#endregion common*/
 
 /*#region sidebar*/
@@ -260,6 +312,25 @@ span.lighted_text {
     padding-left: 0.5rem;
 }
 
+.music_nav_section a {
+    font-size: 12px;
+    padding: 0 1rem;
+    color: var(--light-off);
+    text-decoration: none;
+    position: relative;
+}
+
+.music_nav_section a:first-child:after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 30%;
+    right: 30%;
+    height: 2px;
+    background: var(--evidence);
+    display: block;
+}
+
 /*#endregion sidebar*/
 
 /*#region wrapper*/
@@ -319,28 +390,6 @@ span.lighted_text {
     max-width: 230px;
     padding: 0.5rem;
     position: relative;
-}
-
-.music_nav_section a {
-    font-size: 12px;
-    padding: 0 1rem;
-    color: var(--light-off);
-    text-decoration: none;
-    position: relative;
-}
-
-.music_nav_section a:first-child:after {
-    content: '';
-    position: absolute;
-    bottom: -0.5rem;
-    left: 30%;
-    right: 30%;
-    height: 2px;
-    background: var(--evidence);
-    display: block;
-}
-
-.card {
     text-align: center;
 }
 
@@ -535,6 +584,53 @@ i.fa-regular.fa-folder,
 }
 
 /*#endregion hover*/
+
+/*#region animations*/
+
+.playlist,
+.playlist_name,
+.rotate {
+    position: relative;
+}
+
+.playlist:hover,
+.playlist_name:hover {
+    animation-name: to_right;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes to_right {
+    from {
+        color: var(--light-on);
+        top: 0;
+        left: 0px;
+    }
+
+    to {
+        color: var(--evidence);
+        top: 0;
+        left: 50px;
+    }
+}
+
+.square:hover i.rotating_plus {
+    animation-name: rotation;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+/*#endregion animations*/
 
 /**************RESPONSIVE**************/
 
